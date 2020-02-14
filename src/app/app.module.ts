@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { SearchComponent } from './search/search.component';
 import { WeatherComponent } from './weather/weather.component';
 import { AirQualityComponent } from './air-quality/air-quality.component';
-import { CoreModule } from './core/core.module';
+import { CoreModule } from './_core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+import { SharedModule } from './_shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,9 @@ import { CoreModule } from './core/core.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule,
+    SharedModule
   ],
   providers: [],
   bootstrap: [AppComponent]

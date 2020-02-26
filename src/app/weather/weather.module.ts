@@ -1,19 +1,17 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {GoogleMapsModule} from '@angular/google-maps';
 
-import {MapComponent} from './map.component';
+import {WeatherComponent} from './weather.component';
 import { SharedModule } from '.././_shared/shared.module';
 import { MaterialModule } from '../material';
 
 @NgModule({
-    declarations: [ MapComponent ],
+    declarations: [ WeatherComponent ],
     imports: [
         CommonModule,
         SharedModule,
-        GoogleMapsModule,
         MaterialModule
     ],
-    exports: [ MapComponent ]
+    exports: [ WeatherComponent ]
   })
-  export class MapModule { }
+  export class WeatherModule { }

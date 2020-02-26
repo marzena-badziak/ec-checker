@@ -3,9 +3,11 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
-import { WeatherComponent } from './weather/weather.component';
-import { AirQualityComponent } from './air-quality/air-quality.component';
+
+import { SearchModule } from './search/search.module';
+import { MapModule } from './map/map.module';
+import { WeatherModule } from './weather/weather.module';
+import { AirQualityModule } from './air-quality/air-quality.module';
 import { CoreModule } from './_core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,11 +20,11 @@ import { GoogleMapsModule } from '@angular/google-maps'
 
 @NgModule({
   declarations: [
-    AppComponent,
-    SearchComponent,
-    WeatherComponent,
-    AirQualityComponent,
-    MapComponent
+    AppComponent
+    // SearchComponent,
+    // WeatherComponent,
+    // AirQualityComponent,
+    // MapComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,11 @@ import { GoogleMapsModule } from '@angular/google-maps'
     BrowserAnimationsModule,
     SharedModule,
     MaterialModule,
-    GoogleMapsModule
+    GoogleMapsModule,
+    SearchModule,
+    MapModule,
+    WeatherModule,
+    AirQualityModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -5,20 +5,25 @@
 // @import '@angular/material/prebuilt-themes/pink-bluegrey.css';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+    background-color:#d9d9d9;
+}
 
 .container-maps {
     display: flex;
     margin-top: 25.9px;
     flex-direction: column;
     width: 65%;                                                     
-    margin-right: 25px;}
+    margin-right: 25px;
+}
 
 .container-maps-one {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    }
+}
 .maps-text-location {
     font-family: Roboto-med;
     font-size: 14px;
@@ -29,7 +34,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     letter-spacing: normal;
     text-align: center;
     color: #b0b0b0;
-    }
+}
 #map {height: 139px;width: 100%;}
 
 
+.example-card {
+    max-width: 400px;
+    background-color:#f2f2f2;
+}

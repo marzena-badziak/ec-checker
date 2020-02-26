@@ -1,19 +1,18 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
-import {GoogleMapsModule} from '@angular/google-maps';
 
-import {MapComponent} from './map.component';
+import {AirQualityComponent} from './air-quality.component';
+
 import { SharedModule } from '.././_shared/shared.module';
 import { MaterialModule } from '../material';
 
 @NgModule({
-    declarations: [ MapComponent ],
+    declarations: [ AirQualityComponent ],
     imports: [
         CommonModule,
         SharedModule,
-        GoogleMapsModule,
         MaterialModule
     ],
-    exports: [ MapComponent ]
+    exports: [ AirQualityComponent ]
   })
-  export class MapModule { }
+  export class AirQualityModule { }
